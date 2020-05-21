@@ -1,0 +1,76 @@
+{
+  "name": "color-tools",
+  "version": "0.0.0",
+  "description": "library for feeding sets of colours into various tools",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "commit": "git-cz",
+    "clean": "del dist/*",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "lint": "eslint src --ext .js,.ts",
+    "test": "jest --coverage"
+  },
+  "files": [
+    "dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c1rrus/color-tools.git"
+  },
+  "keywords": [
+    "color",
+    "colors",
+    "a11y",
+    "contrast",
+    "palette",
+    "design",
+    "tokens"
+  ],
+  "author": "James Nash (http://cirrus.twiddles.com/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c1rrus/color-tools/issues"
+  },
+  "homepage": "https://github.com/c1rrus/color-tools#readme",
+  "dependencies": {
+    "@types/color": "^3.0.1",
+    "@types/node": "^10.17.24",
+    "color": "^3.1.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/travis-cli": "^8.3.5",
+    "@semantic-release/changelog": "^5.0.1",
+    "@semantic-release/git": "^9.0.0",
+    "@types/jest": "^25.2.3",
+    "@typescript-eslint/eslint-plugin": "^2.34.0",
+    "@typescript-eslint/parser": "^2.34.0",
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0",
+    "del-cli": "^3.0.1",
+    "eslint": "^7.0.0",
+    "husky": "^4.2.5",
+    "jest": "^26.0.1",
+    "semantic-release": "^17.0.7",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.9.3"
+  },
+  "engines": {
+    "node": ">= 10"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run test"
+    }
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    }
+  }
+}
