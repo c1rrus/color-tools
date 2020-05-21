@@ -1,7 +1,7 @@
 #### Project-specific ignores ####
 
 dist/
-
+demo.js
 
 #### Auto-generated ignores ####
 # Logs

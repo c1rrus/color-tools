@@ -5,23 +5,23 @@ import { ImportPluginConfig } from './interfaces/importer';
 import { UrlGeneratorPluginConfig } from './interfaces/url-generator';
 
 
-export interface ColorToolsConfig {
+export interface ColorGlueConfig {
   importers: (string | ImportPluginConfig)[];
   urlGenerators: (string | UrlGeneratorPluginConfig)[];
 }
 
 
-export interface ColorToolsResult {
+export interface ColorGlueResult {
   colors: ColorCollection;
   urls: URL[];
 }
 
 
-export default class ColorTools {
+export default class ColorGlue {
   #plugins = new PluginManager();
-  #config: ColorToolsConfig;
+  #config: ColorGlueConfig;
 
-  constructor(plugins: Plugin[], config: ColorToolsConfig) {
+  constructor(plugins: Plugin[], config: ColorGlueConfig) {
     plugins.forEach(plugin => {
       this.registerPlugin(plugin);
     });
@@ -74,7 +74,7 @@ export default class ColorTools {
     return urls;
   }
 
-  public async run(): Promise<ColorToolsResult> {
+  public async run(): Promise<ColorGlueResult> {
     const colors = await this.importColors();
     const urls = await this.generateUrls(colors);
 

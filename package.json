@@ -1,7 +1,7 @@
 {
-  "name": "color-tools",
+  "name": "colorglue",
   "version": "0.0.0",
-  "description": "library for feeding sets of colours into various tools",
+  "description": "A library for feeding a set of colours into various tools",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -17,7 +17,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/c1rrus/color-tools.git"
+    "url": "git+https://github.com/c1rrus/colorglue.git"
   },
   "keywords": [
     "color",
@@ -31,9 +31,9 @@
   "author": "James Nash (http://cirrus.twiddles.com/)",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/c1rrus/color-tools/issues"
+    "url": "https://github.com/c1rrus/colorglue/issues"
   },
-  "homepage": "https://github.com/c1rrus/color-tools#readme",
+  "homepage": "https://github.com/c1rrus/colorglue#readme",
   "dependencies": {
     "@types/color": "^3.0.1",
     "@types/node": "^10.17.24",
