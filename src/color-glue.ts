@@ -3,7 +3,7 @@ import Plugin from './interfaces/plugin';
 import PluginManager, { PluginInfo } from './plugin-manager';
 import { ImportPluginConfig } from './interfaces/importer';
 import { UrlGeneratorPluginConfig } from './interfaces/url-generator';
-
+import { URL } from 'url';
 
 export interface ColorGlueConfig {
   importers: (string | ImportPluginConfig)[];

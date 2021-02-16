@@ -1,17 +1,20 @@
+import { URL } from 'url';
 import Plugin, { PluginConfig } from './plugin';
 import ColorCollection from '../color-collection';
 
-export interface UrlGeneratorPluginConfig extends PluginConfig {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export interface UrlGeneratorPluginConfig<K = any> extends PluginConfig {
   /**
    * Configuration for the plugin's generateUrl function.
    */
-  urlGeneratorConfig?: any;
+  urlGeneratorConfig?: K;
 }
 
 /**
  * URL generator plugin.
  */
-export default interface UrlGeneratorPlugin extends Plugin {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default interface UrlGeneratorPlugin<K = any> extends Plugin {
   /**
    * Generates a URL from a collection of colors.
    *
@@ -21,5 +24,5 @@ export default interface UrlGeneratorPlugin extends Plugin {
    * @param colors  The input collection to generate colors from.
    * @param config  Config for the plugin's generateUrl function.
    */
-  generateUrl(colors: ColorCollection, config?: any): URL | Promise<URL>;
+  generateUrl(colors: ColorCollection, config?: K): URL | Promise<URL>;
 }

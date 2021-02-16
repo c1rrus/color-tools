@@ -1,3 +1,4 @@
+import { URL } from 'url';
 import UrlGeneratorPlugin from '../interfaces/url-generator';
 import ColorCollection from '../color-collection';
 

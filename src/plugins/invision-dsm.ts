@@ -1,4 +1,5 @@
 import https from 'https';
+import { URL } from 'url';
 import ColorCollection from '../color-collection';
 import ImporterPlugin, { ImportPluginConfig } from '../interfaces/importer';
 
@@ -25,7 +26,7 @@ interface DsmJson {
   };
 }
 
-
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function isColorCollection(tokenOrCollection: any): tokenOrCollection is DsmColorCollection {
   return tokenOrCollection.colors !== undefined && Array.isArray(tokenOrCollection.colors);
 }
@@ -40,9 +41,8 @@ export interface DsmImportConfig {
   url: (string | URL) | (string | URL)[];
 }
 
-export interface DsmImportPluginConfig extends ImportPluginConfig {
+export interface DsmImportPluginConfig extends ImportPluginConfig<DsmImportConfig> {
   name: typeof configKey;
-  importConfig: DsmImportConfig;
 }
 
 
@@ -50,7 +50,7 @@ export interface DsmImportPluginConfig extends ImportPluginConfig {
  * Importer plugin for fetching all colours defined in an
  * InVision DSM library.
  */
-export default class DsmPlugin implements ImporterPlugin {
+export default class DsmPlugin implements ImporterPlugin<DsmImportConfig> {
   public get configKey(): string {
     return configKey;
   }
@@ -104,13 +104,13 @@ export default class DsmPlugin implements ImporterPlugin {
       // Extract lookup colors:
       if (designTokenData.lookup !== undefined) {
         Object.getOwnPropertyNames(designTokenData.lookup.colors).forEach(colorOrCategoryName => {
-          const colorOrCategory = designTokenData.lookup.colors[colorOrCategoryName];
+          const colorOrCategory = designTokenData.lookup?.colors[colorOrCategoryName];
           if(isColorCollection(colorOrCategory)) {
             colorOrCategory.colors.forEach(colorToken => {
               colors.addColor(colorToken.value, colorToken.name);
             });
           }
-          else {
+          else if (colorOrCategory !== undefined) {
             colors.addColor(colorOrCategory.value, colorOrCategory.name);
           }
         });

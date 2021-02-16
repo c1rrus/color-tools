@@ -1,17 +1,19 @@
 import Plugin, { PluginConfig } from './plugin';
 import ColorCollection from '../color-collection';
 
-export interface ImportPluginConfig extends PluginConfig {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export interface ImportPluginConfig<K = any> extends PluginConfig {
   /**
    * Configuration for the plugin's import function.
    */
-  importConfig?: any;
+  importConfig?: K;
 }
 
 /**
  * A color importer plugin.
  */
-export default interface ImporterPlugin extends Plugin {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export default interface ImporterPlugin<K = any> extends Plugin {
   /**
    * Imports a set of colors from somewhere and appends them
    * to the provided color collection.
@@ -22,5 +24,5 @@ export default interface ImporterPlugin extends Plugin {
    * @param colors  The colors object to add the imported colors to.
    * @param config  Config for the plugin's import function.
    */
-  import(colors: ColorCollection, config?: any): Promise<ColorCollection> | ColorCollection;
+  import(colors: ColorCollection, config?: K): Promise<ColorCollection> | ColorCollection;
 }
