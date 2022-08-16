@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/c1rrus/colorglue/compare/v1.0.1...v1.0.2) (2022-08-16)
+
+
+### Bug Fixes
+
+* **deps:** bump minimist from 1.2.5 to 1.2.6 ([26df19c](https://github.com/c1rrus/colorglue/commit/26df19c151896d11923c6dba5b8ba1d087c5c23b))
+
 ## [1.0.1](https://github.com/c1rrus/colorglue/compare/v1.0.0...v1.0.1) (2022-06-18)
 
 
