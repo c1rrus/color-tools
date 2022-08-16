@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/c1rrus/colorglue/compare/v1.0.2...v2.0.0) (2022-08-16)
+
+
+### chore
+
+* makes minimum Node version to 14 and updates dependencies ([237d0c5](https://github.com/c1rrus/colorglue/commit/237d0c5d4676f516cabb62c27247aca922107118))
+
+
+### BREAKING CHANGES
+
+* Minimum supported Node version is now 14.x
+
 ## [1.0.2](https://github.com/c1rrus/colorglue/compare/v1.0.1...v1.0.2) (2022-08-16)
 
 
