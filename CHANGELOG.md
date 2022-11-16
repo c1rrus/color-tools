@@ -1,3 +1,18 @@
+## [2.0.1](https://github.com/c1rrus/colorglue/compare/v2.0.0...v2.0.1) (2022-11-16)
+
+
+### Bug Fixes
+
+* **deps:** bump @types/node from 14.18.24 to 14.18.25 ([164bb7b](https://github.com/c1rrus/colorglue/commit/164bb7bb36e558a058d64f10a9d5c4ea29ffed75))
+* **deps:** bump @types/node from 14.18.25 to 14.18.26 ([737bc35](https://github.com/c1rrus/colorglue/commit/737bc357294a57b98192f273d3353b2ebd414133))
+* **deps:** bump @types/node from 14.18.26 to 14.18.27 ([0377371](https://github.com/c1rrus/colorglue/commit/0377371e7bd73c9ebbbb29a5edda8df2a9520337))
+* **deps:** bump @types/node from 14.18.27 to 14.18.28 ([143e56f](https://github.com/c1rrus/colorglue/commit/143e56f7484c6285df15d34200a4fd0efdfc7a89))
+* **deps:** bump @types/node from 14.18.28 to 14.18.29 ([a20c8ef](https://github.com/c1rrus/colorglue/commit/a20c8ef2993411c5a78e5bbb3da35eeb628dd534))
+* **deps:** bump @types/node from 14.18.29 to 14.18.30 ([26a1ea0](https://github.com/c1rrus/colorglue/commit/26a1ea04bbde504b39668ae4ff550e94db0e790a))
+* **deps:** bump @types/node from 14.18.30 to 14.18.31 ([f1f255f](https://github.com/c1rrus/colorglue/commit/f1f255f70afe99a4833cfaf3deda6fd81c496a13))
+* **deps:** bump @types/node from 14.18.31 to 14.18.32 ([e41f606](https://github.com/c1rrus/colorglue/commit/e41f6065319ea91116774084ca57d5782e4c14f7))
+* **deps:** bump @types/node from 14.18.32 to 14.18.33 ([6b1ed1e](https://github.com/c1rrus/colorglue/commit/6b1ed1e7371dcece690f14d4624077358be4599e))
+
 # [2.0.0](https://github.com/c1rrus/colorglue/compare/v1.0.2...v2.0.0) (2022-08-16)
 
 
