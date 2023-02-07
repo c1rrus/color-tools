@@ -1,3 +1,15 @@
+## [2.0.2](https://github.com/c1rrus/colorglue/compare/v2.0.1...v2.0.2) (2023-02-07)
+
+
+### Bug Fixes
+
+* **deps:** bump @types/node from 14.18.33 to 14.18.34 ([8e76d78](https://github.com/c1rrus/colorglue/commit/8e76d78607cccd86fd5f0125b729c675a6d8c22b))
+* **deps:** bump @types/node from 14.18.34 to 14.18.35 ([2894196](https://github.com/c1rrus/colorglue/commit/2894196189d3de3bfea306a377706a3502bf3ca4))
+* **deps:** bump @types/node from 14.18.35 to 14.18.36 ([2eafa44](https://github.com/c1rrus/colorglue/commit/2eafa44fdb6779de457bad978da6b02268407295))
+* **deps:** bump http-cache-semantics from 4.1.0 to 4.1.1 ([a262324](https://github.com/c1rrus/colorglue/commit/a2623249f812cba2251e574f6130981fee4bd395))
+* **deps:** bump json5 from 2.2.1 to 2.2.3 ([94595b9](https://github.com/c1rrus/colorglue/commit/94595b916bdaf8c1aa3205776690580a9946a932))
+* **deps:** bump minimatch from 3.0.4 to 3.1.2 ([0c65eee](https://github.com/c1rrus/colorglue/commit/0c65eeef4542fde9681ece3d7981d2f46d1dfd59))
+
 ## [2.0.1](https://github.com/c1rrus/colorglue/compare/v2.0.0...v2.0.1) (2022-11-16)
 
 
