@@ -1,7 +1,14 @@
 # Colorglue
-Colorglue lets you glue together color-related files and tools. It can import colors from various sources (online tools, files, etc.) and then feed them into other tools that do interesting things with them (e.g. color contrast checkers).
 
-**WARNING**: This library is in the very early stages of development. The API is therefore unstable. Test coverage and documentation are currently poor too.
+---
+
+⚠️ **No longer supported**
+
+This library is no longer being maintained and the git repo has been archived.
+
+---
+
+Colorglue lets you glue together color-related files and tools. It can import colors from various sources (online tools, files, etc.) and then feed them into other tools that do interesting things with them (e.g. color contrast checkers).
 
 ## Usage
 Install the `colorglue` library as a dependency in your project:
