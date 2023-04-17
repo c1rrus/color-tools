@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/c1rrus/colorglue/compare/v2.0.3...v2.1.0) (2023-04-17)
+
+
+### Features
+
+* trigger release of updated README with deprecation notice ([f418c60](https://github.com/c1rrus/colorglue/commit/f418c6060d1561f065a364c9a3a05963592373c8))
+
 ## [2.0.3](https://github.com/c1rrus/colorglue/compare/v2.0.2...v2.0.3) (2023-04-13)
 
 
